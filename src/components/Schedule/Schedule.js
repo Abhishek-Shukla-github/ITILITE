@@ -5,8 +5,8 @@ import events from "../../events";
 export const Schedule = () => {
     return (
         <div>
-            {events.map((event) => {
-                return <Event event={event} />
+            {events.map((event, i) => {
+                return <Event key={i} event={event} />
             })}
         </div>
     )

@@ -4,7 +4,7 @@ import { faEdit, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import { makeStyles } from '@material-ui/core/styles';
 import styles, { OrangeSwitch } from "./filter.styles";
 import Typography from '@material-ui/core/Typography';
-import Slider, { SliderTooltip } from 'rc-slider';
+import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css'
 
 export const Filter = () => {
@@ -17,10 +17,6 @@ export const Filter = () => {
     const [time, setTime] = useState([0, 24])
     const [duration, setDuration] = useState([0, 24])
 
-    const handleTime = (newTime) => {
-        console.log(newTime)
-        setTime(newTime)
-    }
     const { createSliderWithTooltip } = Slider;
     const Range = createSliderWithTooltip(Slider.Range);
     return (

@@ -22,7 +22,7 @@ export const Event = ({ event }) => {
                     className={classes.checked}
                 />
             </div>
-            <img className={classes.image} src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/AirAsia_NewLogo.svg/1200px-AirAsia_NewLogo.svg.png" />
+            <img className={classes.image} alt="Air Asia thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/AirAsia_NewLogo.svg/1200px-AirAsia_NewLogo.svg.png" />
             <div className={classes.planeInfo}>
                 <h3 className={classes.planeName}>Air Asia</h3>
                 <p className={classes.model}>i5-424</p>

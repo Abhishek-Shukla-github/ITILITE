@@ -4,7 +4,6 @@ export default {
         display: "flex",
         border: "1px solid rgba(0, 0, 0, 0.35)",
         boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
         marginBottom: "10px",
@@ -55,16 +54,16 @@ export default {
             marginRight: "1rem",
         },
     },
-    slider: {
-        width: "10rem",
-        //Responsiveness
-        [sizes.down("xl")]: {
-            width: "8rem",
-        },
-        [sizes.down("md")]: {
-            width: "5rem",
-        },
-    },
+    // slider: {
+    //     width: "10rem",
+    //     //Responsiveness
+    //     [sizes.down("xl")]: {
+    //         width: "8rem",
+    //     },
+    //     [sizes.down("md")]: {
+    //         width: "5rem",
+    //     },
+    // },
     timeLeft: {
         margin: "0"
     },
