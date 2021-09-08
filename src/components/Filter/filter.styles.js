@@ -6,6 +6,9 @@ export default {
     updateItinerary: {
         color: "#eb7140",
     },
+    clear: {
+        cursor: "pointer",
+    },
     filterDiv: {
         marginTop: "10px",
         display: "flex",
@@ -29,6 +32,7 @@ export default {
         margin: "0",
         padding: "10px",
         border: "1px solid grey",
+        cursor: "pointer",
     },
     divFilterActive: {
         color: "#eb7140",
@@ -36,6 +40,7 @@ export default {
         backgroundColor: "#ebc4b5",
         margin: "0",
         padding: "10px",
+        cursor: "pointer",
     },
     departure: {
         marginTop: "2rem"

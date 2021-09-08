@@ -36,7 +36,13 @@ export const Event = () => {
             </div>
             <div className={classes.slider}>
                 <p className={classes.timeLeft}>5hrs 20 mins</p>
-                <Slider dots min={0} max={100} marks={{ 50: "1 stop" }} step={null} defaultValue={20} />
+                <Slider dots min={0} max={100} marks={{ 50: "1 stop" }} step={null} defaultValue={20}
+                    handleStyle={{
+                        backgroundColor: "#eb7140",
+                        border: "#eb7140"
+                    }}
+                    trackStyle={[{ backgroundColor: "#eb7140" }, { backgroundColor: "#eb7140" }]}
+                    activeDotStyle={{ backgroundColor: "#eb7140" }} />
                 {/* <Slider min={-10} marks={marks} step={null} onChange={log} defaultValue={20} /> */}
                 {/* <p className={classes.stop}>1 stop</p> */}
                 <p className={classes.luggage}>Handbags Only</p>

@@ -46,10 +46,12 @@ export default {
         margin: "0"
     },
     date: {
-        margin: "0"
+        margin: "0",
+        color: "#eb7140",
     },
     departureInfo: {
-        marginTop: "10px"
+        marginTop: "10px",
+        color: "#eb7140",
     },
     slider: {
         display: "flex",
@@ -60,7 +62,8 @@ export default {
 
     },
     luggage: {
-        marginTop: "2rem"
+        marginTop: "2rem",
+        color: "#eb7140",
     },
     endTime: {
         display: "flex",
@@ -86,6 +89,7 @@ export default {
     },
     flightDetails: {
         marginTop: "1rem",
-        color: "blue"
+        color: "rgb(8,146,208)",
+        cursor: "pointer",
     },
 }
