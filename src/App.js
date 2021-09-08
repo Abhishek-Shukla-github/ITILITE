@@ -8,13 +8,18 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    backgroundColor: "red"
+    width: "90%",
+    display: "flex",
+    justifyContent: "center",
+    margin: "1rem"
   },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: 500,
+  filter: {
+    width: "20%",
+    marginRight: "5rem",
+  },
+  schedule: {
+    width: "60%",
+    marginRight: "2rem",
   }
 }));
 
@@ -22,17 +27,12 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <Grid container spacing={8} >
-          <Grid item>
-            <Filter />
-          </Grid>
-          <Grid container item xs={12} sm>
-            <Schedule />
-          </Grid>
-        </Grid>
-
-      </Paper>
+      <div className={classes.filter}>
+        <Filter />
+      </div>
+      <div className={classes.schedule}>
+        <Schedule />
+      </div>
     </div>
   );
 }

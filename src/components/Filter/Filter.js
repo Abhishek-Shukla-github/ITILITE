@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faSlidersH } from '@fortawesome/free-solid-svg-icons';
-import { withStyles } from "@material-ui/styles";
 import { makeStyles } from '@material-ui/core/styles';
 import styles, { OrangeSwitch } from "./filter.styles";
 import Typography from '@material-ui/core/Typography';

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Event } from "../Events/Event";
 import "./schedule.css";
 
 export const Schedule = () => {
     return (
         <div>
-            <h1>Schedule</h1>
+            <Event />
         </div>
     )
 }
