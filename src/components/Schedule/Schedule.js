@@ -1,10 +1,13 @@
 import React from 'react';
-import { Event } from "../Events/Event";
+import { Event } from "../Event/Event";
+import events from "../../events";
 
 export const Schedule = () => {
     return (
         <div>
-            <Event />
+            {events.map((event) => {
+                return <Event event={event} />
+            })}
         </div>
     )
 }

@@ -39,8 +39,8 @@ export const Filter = () => {
                     <p>Maximum Stops</p>
                     <div className={classes.divFilters}>
                         <div className={noStopFilter ? classes.divFilterActive : classes.divFilter} onClick={() => setNoStopFilter(!noStopFilter)}> Non Stop</div>
-                        <div className={oneStopFilter ? classes.divFilterActive : classes.divFilter} onClick={() => setOneStopFilter(!oneStopFilter)}>Upto Stop</div>
-                        <div className={twoStopFilter ? classes.divFilterActive : classes.divFilter} onClick={() => setTwoStopFilter(!twoStopFilter)} >2+ Stop</div>
+                        <div className={oneStopFilter ? classes.divFilterActive : classes.divFilter} onClick={() => setOneStopFilter(!oneStopFilter)}>Upto 1 Stop</div>
+                        <div className={twoStopFilter ? classes.divFilterActive : classes.divFilter} onClick={() => setTwoStopFilter(!twoStopFilter)} >Upto 2+ Stop</div>
                     </div>
                 </div>
                 <div className={classes.departure}>
@@ -53,7 +53,7 @@ export const Filter = () => {
                         trackStyle={[{ backgroundColor: "#eb7140" }, { backgroundColor: "#eb7140" }]}
                         activeDotStyle={{ backgroundColor: "#eb7140" }}
                     />
-                    <p>{time[0]} hrs - {time[1]} hrs</p>
+                    <p className={classes.time}>{time[0]} hrs - {time[1]} hrs</p>
                 </div>
                 <div className={classes.duration}>
                     <Typography id="duration-slider" gutterBottom>Duration</Typography>
@@ -65,7 +65,7 @@ export const Filter = () => {
                         trackStyle={[{ backgroundColor: "#eb7140" }, { backgroundColor: "#eb7140" }]}
                         activeDotStyle={{ backgroundColor: "#eb7140" }}
                     />
-                    <p>{duration[0]} hrs - {duration[1]} hrs</p>
+                    <p className={classes.time}>{duration[0]} hrs - {duration[1]} hrs</p>
                 </div>
             </div>
         </div>

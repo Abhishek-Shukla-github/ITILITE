@@ -37,7 +37,7 @@ export default {
     divFilterActive: {
         color: "#eb7140",
         border: "1px solid #eb7140",
-        backgroundColor: "#ebc4b5",
+        backgroundColor: "rgba(235, 113, 64,0.15)",
         margin: "0",
         padding: "10px",
         cursor: "pointer",
@@ -47,6 +47,9 @@ export default {
     },
     duration: {
         marginTop: "0.7rem"
+    },
+    time: {
+        color: "grey"
     }
 }
 

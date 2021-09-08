@@ -7,6 +7,7 @@ export default {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: "10px",
         //Responsiveness
         [sizes.down("xl")]: {
             width: "100%",
@@ -49,7 +50,6 @@ export default {
         //Responsiveness
         [sizes.down("xl")]: {
             marginRight: "2rem",
-            backgroundColor: "yellow"
         },
         [sizes.down("md")]: {
             marginRight: "1rem",
@@ -98,7 +98,6 @@ export default {
     departureInfo: {
         marginTop: "10px",
         color: "#eb7140",
-
     },
     slider: {
         display: "flex",
@@ -179,6 +178,7 @@ export default {
     },
     policy: {
         margin: "0",
+        color: "#eb7140",
         //Responsiveness
         [sizes.down("lg")]: {
             fontSize: "1rem"
